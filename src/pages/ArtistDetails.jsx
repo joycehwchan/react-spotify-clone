@@ -21,7 +21,7 @@ const ArtistDetails = () => {
       <DetailsHeader artistId={artistId} artistData={artistData?.data[0]} />
 
       <RelatedSongs
-        data={Object.values(artistData?.songs)}
+        data={artistData?.data[0].views['top-songs']?.data}
         artistId={artistId}
         isPlaying={isPlaying}
         activeSong={activeSong}

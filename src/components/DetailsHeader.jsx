@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
 const DetailsHeader = ({ artistId, artistData, songData }) => {
-  const artist = artistData?.artists[artistId]?.attributes;
+  const artist = artistData?.attributes;
 
   return (
     <div className="relative w-full flex-flex-col">
@@ -13,7 +13,7 @@ const DetailsHeader = ({ artistId, artistData, songData }) => {
           alt="art"
           src={
             artistId
-              ? artist?.artwork.url.replace('{w}', '500').replace('{h}', '500')
+              ? artist?.artwork?.url.replace('{w}', '500').replace('{h}', '500')
               : songData?.images?.coverart
           }
         />
