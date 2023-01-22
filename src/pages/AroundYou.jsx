@@ -14,7 +14,7 @@ const AroundYou = () => {
   // prettier-ignore
   // useEffect(() => {
   //   axios
-  //     .get(`https://geo.ipify.org/api/v/country?apiKey=${import.meta.env.VITE_GEO_API_KEY}&ipAddress=8.8.8.8`)
+  //     .get(`https://geo.ipify.org/api/v2/country?apiKey=${import.meta.env.VITE_GEO_API_KEY}&ipAddress=8.8.8.8`)
   //     .then((res) => setCountry(res?.data?.location.country))
   //     .catch((err) => console.log(err))
   //     .finally(() => setLoading(false));
